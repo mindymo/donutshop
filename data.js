@@ -16,9 +16,11 @@ function Shop(name, donutPerCust, open, close, maxPerHour, minPerHour) {
 		var message = this.name + " is open for " + this.hoursOpen() + " hours.\n";
 		message += "Each customer buys " + this.donutPerCust + " donuts.\n";
 		var donutsPerHour = this.hourlyTotal();
+		message += "An estimated " + parseInt(donutsPerHour / this.donutPerCust) + 
+		" customers will visit the shop every hour today.\n";
 		message += "On average, " + donutsPerHour + " donuts are sold each hour.\n";
 		message += "In total, " + (donutsPerHour * this.hoursOpen()) + 
-		" donuts are needed daily.\r";
+		" donuts are needed today.\r";
 		return message;
 	};
 }
@@ -29,11 +31,11 @@ var hawthorneShop = new Shop("Hawthorne", 6.33, 900, 1700, 23, 9);
 var sellwoodShop = new Shop("Sellwood", 1.25, 1100, 1500, 28, 2);
 var sandyShop = new Shop("Sandy", 3.75, 500, 1500, 58, 8);
 
-console.log(downtownShop.shopReport() + "\r");
-console.log(albertaShop.shopReport() + "\r");
-console.log(hawthorneShop.shopReport() + "\r");
-console.log(sellwoodShop.shopReport() + "\r");
-console.log(sandyShop.shopReport() + "\r");
+console.log(downtownShop.shopReport());
+console.log(albertaShop.shopReport());
+console.log(hawthorneShop.shopReport());
+console.log(sellwoodShop.shopReport());
+console.log(sandyShop.shopReport());
 
 
 
