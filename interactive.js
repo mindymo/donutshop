@@ -1,6 +1,6 @@
 $("#downtown").append("<button>Downtown</button>");
 $("#downtown button").click(function(){
-	$(this).hide().show(downtownShop.shopReport());
+	$(this).hide().replaceWith("<p>" + downtownShop.shopReport() + "</p>");
 });
 
 $("#alberta").append("<button>Alberta</button>");
