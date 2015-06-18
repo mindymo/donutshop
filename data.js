@@ -13,14 +13,11 @@ function Shop(name, donutPerCust, open, close, maxPerHour, minPerHour) {
 			+ this.minPerHour));
 	};
 	this.shopReport = function() {
-		var message = this.name + " is open for " + this.hoursOpen() + " hours.\n";
-		message += "Each customer buys " + this.donutPerCust + " donuts.\n";
+		var message = this.name + " shop: " + this.donutPerCust + " donuts per customer</br>";
 		var donutsPerHour = this.hourlyTotal();
-		message += "An estimated " + parseInt(donutsPerHour / this.donutPerCust) + 
-		" customers will visit the shop every hour today.\n";
-		message += "On average, " + donutsPerHour + " donuts are sold each hour.\n";
-		message += "In total, " + (donutsPerHour * this.hoursOpen()) + 
-		" donuts are needed today.\r";
+		message += "Hourly customers: " + parseInt(donutsPerHour / this.donutPerCust) + "</br>";
+		message += "Donuts per hour: " + donutsPerHour + "</br>";
+		message += "Donuts needed daily: " + (donutsPerHour * this.hoursOpen());
 		return message;
 	};
 }
