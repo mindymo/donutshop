@@ -1,28 +1,66 @@
-//create buttons and shop reports
 
-$("#downtown").append("<button>Downtown</button>");
-$("#downtown button").click(function(){
-	$(this).hide().replaceWith("<p>" + downtownShop.shopReport() + "</p>");
+$("#downtown").click(function(){
+    var $this = $(this);
+    if ($this.hasClass("clicked-once")) {
+        $(".report").html("<h2>Mmmm</h2>");	
+    }
+    else {
+        $this.html("<div class='report'>" + downtownShop.shopReport() + "</div>");
+        $this.addClass("clicked-once");
+    }
 });
 
-$("#alberta").append("<button>Alberta</button>");
-$("#alberta button").click(function(){
-	$(this).hide().replaceWith("<p>" + albertaShop.shopReport() + "</p>");
+$("#alberta").click(function(){
+    var $this = $(this);
+    if ($this.hasClass("clicked-once")) {
+        $(".report").html("<h2>Mmmm</h2>");	
+    }
+    else {
+        $this.html("<div class='report'>" + albertaShop.shopReport() + "</div>");
+        $this.addClass("clicked-once");
+    }
 });
 
-$("#hawthorne").append("<button>Hawthorne</button>");
-$("#hawthorne button").click(function(){
-	$(this).hide().replaceWith("<p>" + hawthorneShop.shopReport() + "</p>");
+$("#hawthorne").click(function(){
+    var $this = $(this);
+    if ($this.hasClass("clicked-once")) {
+        $(".report").html("<h2>Mmmm</h2>");	
+    }
+    else {
+        $this.html("<div class='report'>" + hawthorneShop.shopReport() + "</div>");
+        $this.addClass("clicked-once");
+    }
 });
 
-$("#sellwood").append("<button>Sellwood</button>");
-$("#sellwood button").click(function(){
-	$(this).hide().replaceWith("<p>" + sellwoodShop.shopReport() + "</p>");
+$("#sellwood").click(function(){
+    var $this = $(this);
+    if ($this.hasClass("clicked-once")) {
+        $(".report").html("<h2>Mmmm</h2>");	
+    }
+    else {
+        $this.html("<div class='report'>" + sellwoodShop.shopReport() + "</div>");
+        $this.addClass("clicked-once");
+    }
 });
 
-$("#sandy").append("<button>Sandy</button>");
-$("#sandy button").click(function(){
-	$(this).hide().replaceWith("<p>" + sandyShop.shopReport() + "</p>");
+$("#sandy").click(function(){
+    var $this = $(this);
+    if ($this.hasClass("clicked-once")) {
+        $(".report").html("<h2>Mmmm</h2>");	
+    }
+    else {
+        $this.html("<div class='report'>" + sandyShop.shopReport() + "</div>");
+        $this.addClass("clicked-once");
+    }
 });
+
+$("#donut").click(function(){
+	$(this).html("<div id='homer'></div>");
+});
+
+
+
+
+
 
 

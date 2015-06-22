@@ -1,16 +1,21 @@
-h1 {
+h1, h2 {
 	font-family: 'Pacifico', cursive;
 	font-size: 2.5em;
 	color: #ff1493;
+	line-height: 1.2em;
 }
 
-h3, p, table, footer {
+h2 {
+	color: white;
+}
+
+h3, p, div, footer {
 	font-family: 'Abel', sans-serif;
 }
 
 h3 {
 	text-align: right;
-	margin-top: -55px;
+	margin-top: -30px;
 }
 
 #container {
@@ -19,8 +24,8 @@ h3 {
 }
 
 footer {
-	text-align: center;
-	margin-top: 20px;
+	text-align: right;
+	margin-top: 30px;
 	clear: both;
 	font-size: 0.8em;
 }
@@ -31,31 +36,39 @@ p, footer {
 	border-bottom: 1px solid #ff1493;
 }
 
-#image {
-	float: left;
-	margin: 10px;
-	margin-top: 15px;
-	border: 5px solid white;
-	box-shadow: 5px 5px 5px #ccc;
-}
-
-table {
-	border-collapse: collapse;
-	width: 60%;
-}
-
-th, td {
-  padding: 0.25rem;
-  text-align: left;
-  border: 1px solid #ccc;
-}
-
-button {
-	font-family: 'Pacifico', cursive;
+main div {
 	background-color: #ff1493;
-	color: white;
-	font-size: 1.25em;
+	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-shadow: 2px 2px 2px #ccc;
-	text-align: center;
+  	text-align: center;
+  	margin: 1%;
+ 	width: 31%;
+  	height: 150px;
+  	float: left;
 }
+
+#donut {
+	background-color: white;
+}
+
+.report {
+	font-family: 'Abel', sans-serif;
+	font-size: 1em;
+	color: white;
+  	text-align: center;
+  	margin: 1%;
+ 	width: 100%;
+  	height: 150px;
+  	float: left;
+}
+
+#homer {
+	background-image: url("http://media.giphy.com/media/SZTpiydWi10AM/giphy.gif");
+	background-size: cover;
+	width: 100%;
+	margin: 0;
+}
+
+
+
